@@ -4,6 +4,8 @@ import modulo2.Book;
 import modulo2.Cat;
 import modulo2.Dog;
 import modulo3.Division;
+import modulo4.Coleciones;
+import modulo4.Pareja;
 import modulo3.Comprar;
 
 public class Main {
@@ -33,6 +35,22 @@ public class Main {
     TryF.comprobar();
 
     TryF.comprobar();
+
+    Coleciones collection = new Coleciones();
+
+    collection.fillCollection();
+    collection.printNamesList();
+    collection.printNamesSet();
+    collection.fillMap();
+    collection.printMap();
+
+    Pareja<String, String> cadenas = new Pareja<>("Loco ", "Chavez");
+    cadenas.realizarOperacion();
+
+    Pareja<Integer, Integer> numeros = new Pareja<>(2 , 8);
+    numeros.realizarOperacion();
+
+
 
   }
 }
