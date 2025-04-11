@@ -10,28 +10,28 @@ you execute the App.java that you found in the module zoo.app
 
 ## Análisis y diseño
 
-1. ¿Qué modificador de acceso debe tener el atributo nombre del animal? ¿Por qué?
+¿Qué modificador de acceso debe tener el atributo nombre del animal? ¿Por qué?
 
   R/ El modificador de acceso seria private, ya que solo es accesible dentro de la clase.
 
-2. ¿Qué modificador aplicarías a zonaAsignada si solo debe accederse dentro del paquete modelo?
+¿Qué modificador aplicarías a zonaAsignada si solo debe accederse dentro del paquete modelo?
 
   R/ Aplicaría el modificador por defecto ya que con este se encapsula dentro del mismo paquete
     y esto permite que no sea visible ni modificable por fuera.
 
-3. ¿Cómo harías para que el atributo idAnimal solo sea accesible por clases que heredan de Animal?
+¿Cómo harías para que el atributo idAnimal solo sea accesible por clases que heredan de Animal?
 
   R/ Utilize el modificador "protected" ya que este me permite acceder solo cuando se hereda
 
-4. El método mostrarInfo() debe poder ser llamado desde cualquier clase. ¿Qué modificador necesita?
+El método mostrarInfo() debe poder ser llamado desde cualquier clase. ¿Qué modificador necesita?
 
   R/ el modificador a usar en este caso el "public"
 
-5. El método reporteInterno() contiene datos confidenciales y solo debe usarse en subclases. ¿Qué modificador aplicarías?
+El método reporteInterno() contiene datos confidenciales y solo debe usarse en subclases. ¿Qué modificador aplicarías?
 
   R/ Para este se uso "protected"
 
-6. ¿Qué modificador pondrías al método validarZona(), que solo será usado por clases como RegistroAnimal en el mismo paquete?
+¿Qué modificador pondrías al método validarZona(), que solo será usado por clases como RegistroAnimal en el mismo paquete?
 
   R/ para eso usaria el modificador por defecto ya que este permite acceder por classes en el mismo paquete
 
@@ -54,4 +54,4 @@ específico?
 
 - ¿Crees que aplicar estos principios mejora el diseño del software? ¿Por qué?
 
-R/ Aplicar estos pricipios mejoran la calidad del software al hacer de este algo mudular, legible y mantenible. Esto es por que al tener in correcto nivel de encapsulamiento, el desarrollo se vuelver mucho mas eficiente, y hasta se es mas rapido de completar, su estricto orden hace que se eviten cometer errores y en el momento de corregir algo o hace mantenimiento es mucho mas facil si esta claro el uso de cada paquete y clase.
+  R/ Aplicar estos pricipios mejoran la calidad del software al hacer de este algo mudular, legible y mantenible. Esto es por que al tener in correcto nivel de encapsulamiento, el desarrollo se vuelver mucho mas eficiente, y hasta se es mas rapido de completar, su estricto orden hace que se eviten cometer errores y en el momento de corregir algo o hace mantenimiento es mucho mas facil si esta claro el uso de cada paquete y clase.
